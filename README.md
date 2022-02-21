@@ -1,4 +1,4 @@
-# Aprendizado de máquina para diagnóstico de câncer co multi classificações.
+# Aprendizado de máquina para diagnóstico de câncer com multi classificações.
 Importante salientar que esses dados foram obtidos durante o curso da Alura https://cursos.alura.com.br/course/reducao-dimensionalidade .
 
 ## Sobre o algoritmo
