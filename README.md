@@ -27,13 +27,13 @@ Tecnologias usadas no projeto.
 * Aplicar um RandomForest foi a priemira ideia de teste para sabermos nossa baseline.
 ![Post show](https://github.com/PFCalanca/ML_diagnostico_MD/blob/master/core/img/rdforest.png)
 
-* RandomForest nos da uma uma acuracia de 95% mas para saber se realmente é uma info valida temos que validar
+* RandomForest nos da uma acurácia de 95%, mas para saber se realmente é uma info valida temos que validar.
 ## Entendendo o que temos com a primeira visualização:
-* Violinplot é uma boa maneira de saber qual exame é o melhor, se distribuimos separando maligno e beligno, sabemos que o exame com a melhor distribuição (uma    crista distante da outra) é o exame que é capaz de diagnosticar deixando menos duvida.
+* Violinplot é uma boa maneira de saber qual exame é o melhor, se distribuímos separando maligno e benigno, sabemos que o exame com a melhor distribuição (uma    crista distante da outra) é o exame que consegue diagnosticar deixando menos duvida.
 
 ![Post show](https://github.com/PFCalanca/ML_diagnostico_MD/blob/master/core/img/violin.png)
 
-* Uma observação é que algumas colunas tem valores constantes, por isso elas seram excluidas para as analises posteriores
+* Uma observação é que algumas colunas têm valores constantes, por isso elas serão excluídas para as análises posteriores.
 
 ### Matriz de correlação
 ![Post show](https://github.com/PFCalanca/ML_diagnostico_MD/blob/master/core/img/heatmap.png)
@@ -43,16 +43,21 @@ Tecnologias usadas no projeto.
   
 <center>  Como observamos na matriz de correlação algumas colunas, se deixadas no dataset, poderá viciar nosso treinamento, por isso vamos identificá-las e excluir uma de cada.
   
-  ![Post show](TEXTO) 
   * Primeiro vamos ver as colunas cujo a correlação esta acima de 0.99.
-  ![Post show](TEXTO)
  
-  * Sabendo que pelo menos uma linha tem o valor 1 na matriz de correlação, somando as colunas onde tem valores acima de 0.99, temos somente os exames com maior correlação do dataset.
+ ![Post show](https://github.com/PFCalanca/ML_diagnostico_MD/blob/master/core/img/tratamento1.png) 
+  ---
+ ![Post show](https://github.com/PFCalanca/ML_diagnostico_MD/blob/master/core/img/tratamento2.png)
   
-  ![Post show](TEXTO) 
+  
+  * Sabendo que pelo menos uma linha tem o valor 1 na matriz de correlação, somando as colunas onde tem valores acima de 0.99, temos somente os exames com maior correlação do dataset.
+ 
+ ![Post show](https://github.com/PFCalanca/ML_diagnostico_MD/blob/master/core/img/tratamento3.png) 
   
   * Todos acima de 1 já que foram somados, são as nossas colunas que poluem nosso treinamento.
-  ![Post show](TEXTO) 
+ 
+  ![Post show](https://github.com/PFCalanca/ML_diagnostico_MD/blob/master/core/img/tratamento4.png) 
+
 </center>
 
 ### Matriz de confusão (Vamos ultilizar algumas): 
