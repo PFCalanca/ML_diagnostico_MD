@@ -60,7 +60,7 @@ Tecnologias usadas no projeto.
 
 </center>
 
-### Matriz de confusão (Vamos ultilizar algumas): 
+### Matriz de confusão (Vamos utilizar algumas): 
 
 ![Post show](https://github.com/PFCalanca/ML_diagnostico_MD/blob/master/core/img/k_best_con.png)
 
